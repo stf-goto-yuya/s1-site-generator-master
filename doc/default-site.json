@@ -1,0 +1,22 @@
+{
+  "accountId": "829390405081046196",
+  "accountName": "Think Factory Co., Ltd.",
+  "activeLicenses": 0,
+  "createdAt": "2020-05-04T14:37:46.543108Z",
+  "creator": "Negishi",
+  "creatorId": "829535651085496758",
+  "expiration": null,
+  "externalId": null,
+  "healthStatus": true,
+  "id": "883943415317889722",
+  "isDefault": false,
+  "name": "Sample2",
+  "registrationToken": "eyJ1cmwiOiAiaHR0cHM6Ly9hcG5lMS0xMTAxLW5mci5zZW50aW5lbG9uZS5uZXQiLCAic2l0ZV9rZXkiOiAiZDFiZDE2MTlkYmI4MzFmYSJ9",
+  "siteType": "Trial",
+  "state": "active",
+  "suite": "Complete",
+  "totalLicenses": 10,
+  "unlimitedExpiration": true,
+  "unlimitedLicenses": false,
+  "updatedAt": "2020-05-04T14:37:46.541941Z"
+}

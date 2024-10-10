@@ -1,0 +1,22 @@
+{
+  "accountId": "829390405081046196",
+  "accountName": "Think Factory Co., Ltd.",
+  "activeLicenses": 0,
+  "createdAt": "2020-05-02T13:58:19.462640Z",
+  "creator": "Negishi",
+  "creatorId": "829535651085496758",
+  "expiration": null,
+  "externalId": null,
+  "healthStatus": true,
+  "id": "882474007349254085",
+  "isDefault": false,
+  "name": "Dammy Site9",
+  "registrationToken": "eyJ1cmwiOiAiaHR0cHM6Ly9hcG5lMS0xMTAxLW5mci5zZW50aW5lbG9uZS5uZXQiLCAic2l0ZV9rZXkiOiAiZTFmNmEzZWMxNDJiYThhNSJ9",
+  "siteType": "Trial",
+  "state": "active",
+  "suite": "Complete",
+  "totalLicenses": 10,
+  "unlimitedExpiration": true,
+  "unlimitedLicenses": false,
+  "updatedAt": "2020-05-02T13:58:19.461022Z"
+}

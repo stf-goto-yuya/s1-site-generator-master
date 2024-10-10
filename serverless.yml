@@ -1,0 +1,47 @@
+service:
+  name: s1-site-generator
+
+# app and org for use with dashboard.serverless.com
+#app: your-app-name
+#org: your-org-name
+
+# Add the serverless-webpack plugin
+plugins:
+  - serverless-webpack
+
+package:
+  include:
+    - templates/trial_html.hbs
+    - templates/trial_text.hbs
+
+provider:
+  name: aws
+  region: ap-northeast-1
+  stage: ${opt:stage, 'dev'}
+  runtime: nodejs14.x
+  timeout: 300
+  apiGateway:
+    minimumCompressionSize: 1024 # Enable gzip compression for responses > 1 KB
+  environment: ${self:custom.environment.${self:provider.stage}}
+
+custom:
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true
+  defaultStage: dev
+  environment:
+    dev: ${file(./env/dev.yml)}
+    prod: ${file(./env/prod.yml)}
+
+functions:
+  site-generate:
+    handler: handler.run
+    package:
+      individually: true
+      include:
+        - templates/**
+    events:
+      - http:
+          method: post
+          path: send
+          cors: true
